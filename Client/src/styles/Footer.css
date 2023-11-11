@@ -1,0 +1,44 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    display: flex;        
+    justify-content: center; 
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;  /* Removes bullet points */
+    display: flex;  /* Sets list to display in a row */
+    justify-content: space-between;  /* Distributes space between items */
+    width: max-content;  /* Fits the width to content, so spacing works properly */
+    margin: 0 auto;  /* Centers the list on the page */
+  margin-left: -20px;
+}
+
+footer ul li {
+    margin: 0 10px;  /* Adds 10px spacing to left and right of each item */
+}
+
+footer a {
+    text-decoration: none;  /* Removes underlines */
+    color: white;  /* Sets link color to white */
+}
+
+footer a:hover {
+    text-decoration: underline;  /* Optional: Underlines links on hover */
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.copyright {
+    margin-right: 20px;
+}

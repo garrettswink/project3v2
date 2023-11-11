@@ -1,0 +1,33 @@
+.tracker-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 500px;
+    width: 500px;
+    border: solid black 1px;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+@media (max-height: 600px) {
+    .tracker-container {
+        height: 300px;
+        width: 300px;
+        padding: 0.5em;
+    }
+
+    h1 {
+        font-size: smaller;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tracker-container {
+        width: 90%;
+        height: auto;
+        min-height: 300px;
+    }
+}
+

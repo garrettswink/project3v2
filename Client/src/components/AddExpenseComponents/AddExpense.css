@@ -1,0 +1,103 @@
+/* .new-expense-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-expense {
+    background-color: #a892ee;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 50%;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.add-expense button {
+    font: inherit;
+    cursor: pointer;
+    padding: 12px;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+    
+}
+
+.add-expense button:hover,
+.add-expense button:active {
+    background-color: #510674;
+    border-color: #510674;
+}
+
+.add-expense button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.add-expense button.alternative:hover,
+.add-expense button.alternative:active {
+    background-color: #ddb3f8;
+} */
+
+/* Use this for the .new-expense-action class to center its children horizontally and vertically if needed */
+.new-expense-action {
+    display: flex;
+    justify-content: center; /* Horizontally centers the items */
+    align-items: center; /* Vertically centers the items, if your container has a specific height */
+    padding: 2.3rem; /* This can add some padding inside the action container if you want */
+    flex-wrap: wrap; /* If you want the buttons to wrap on small screens */
+    gap: 5rem; /* Space between the buttons */
+  }
+  
+  /* Style for .add-expense adjusted to contain the above .new-expense-action properly */
+  .add-expense {
+    background-color: #a892ee;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 30%;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    display: flex; /* Add display flex to direct children for vertical alignment */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children horizontally */
+  }
+  
+  .add-expense button {
+    font: inherit;
+    cursor: pointer;
+    padding: 12px;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+  }
+  
+  .add-expense button:hover,
+  .add-expense button:active {
+    background-color: #510674;
+    border-color: #510674;
+  }
+  
+  .add-expense button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .add-expense button.alternative:hover,
+  .add-expense button.alternative:active {
+    background-color: #ddb3f8;
+  }
+
+  .new-expense-input input,
+.new-expense-input select {
+  width: 100%; /* This makes the input stretch to the full container width */
+  padding: 0.5rem;
+  margin-top: 0.5rem; /* Adds a little space above the input */
+  margin-bottom: 0.5rem; /* Adds a little space below the input */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+  

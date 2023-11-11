@@ -1,0 +1,40 @@
+
+/* ExpenseForm.css */
+.new-expense-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Creates consistent spacing between children */
+  }
+  
+  .new-expense-input {
+    display: flex;
+    flex-direction: row; /* Align label and input side by side */
+    align-items: center; /* Centers the label and input */
+    gap: 0.5rem; /* Spacing between label and input field */
+  }
+  
+  .new-expense-input label {
+    min-width: 100px; /* Adjust this based on your longest label */
+  }
+  
+  .new-expense-input input,
+  .new-expense-input select {
+    flex: 1; /* Allows input and select to fill the available space */
+  }
+  
+  .new-expense-action {
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    gap: 0.5rem; /* Spacing between buttons */
+  }
+  
+  button {
+    padding: 0.5rem 1rem; /* Uniform padding for all buttons */
+  }
+  
+  .form-status-message{
+    background-color: red;
+    margin-top: 10px;
+    
+  }
+  

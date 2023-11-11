@@ -1,0 +1,11 @@
+.expense-card {
+    background-color: #a892ee;
+width: 250px;
+margin: 16px;
+padding: 16px;
+flex-direction: column;
+display: flex;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 10%;
+width: 500px;
+}
