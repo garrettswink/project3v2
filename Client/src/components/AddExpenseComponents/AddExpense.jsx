@@ -28,7 +28,7 @@ const startEditingHandler = () => {
     setIsEditing(true);
 };
 
-// Event Handler: Cancel Button
+
 const stopEditingHandler = () => {
     setIsEditing(false);
 };
@@ -36,7 +36,6 @@ const stopEditingHandler = () => {
 return (
     <div className="add-expense">
         {
-            /* If isEditing is true, display form, else display the Add Expense button */
             isEditing === true ?
             <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} 
             onCancel={stopEditingHandler} /> :
