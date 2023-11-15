@@ -30,6 +30,7 @@ const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const REGISTER_URL = 'user/register';
 
 const Register = () => {
+    const navigate = useNavigate();
     const userRef = useRef();
     const errRef = useRef();
 
@@ -75,14 +76,12 @@ const Register = () => {
             return;
         }
         try {
-            const response = await axios.post(REGISTER_URL, JSON.stringify({ user, pwd }));
-            // (
-
-            //     {
-            //         headers: { 'Content-Type': 'application/json' },
-            //         withCredentials: true
-            //     }
-            // );
+            const response = await axios.post(REGISTER_URL, JSON.stringify({ user, pwd }), 
+            {
+                headers: { 'Content-Type': 'application/json' },
+                // withCredentials: true
+            });
+            
             console.log(response?.data);
             console.log(response?.accessToken);
             console.log(JSON.stringify(response))
@@ -92,6 +91,7 @@ const Register = () => {
             setUser('');
             setPwd('');
             setMatchPwd('');
+            navigate("/tracker");
         } catch (err) {
             if (!err?.response) {
                 setErrMsg('No Server Response');
